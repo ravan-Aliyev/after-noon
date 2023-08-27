@@ -78,10 +78,3 @@ export const cartSlice = createSlice({
 });
 
 export const cartActions = cartSlice.actions;
-
-// const arr = [{ id: 4 }];
-// const exting = arr.filter((item) => item.id === 4);
-
-// exting.id = 5;
-
-// console.log(arr);

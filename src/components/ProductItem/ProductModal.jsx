@@ -3,9 +3,9 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import Button from "../UI/Button";
 import { Link } from "react-router-dom";
 import { FaX } from "react-icons/fa6";
-import { color, motion as m } from "framer-motion";
+import { motion as m } from "framer-motion";
 import { useState, useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { cartActions } from "../../store/cart-slice";
 
 const backdropVariant = {

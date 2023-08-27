@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import Input from "../../UI/Input";
 import classes from "./SideCartItem.module.scss";
 import { cartActions } from "../../../store/cart-slice";

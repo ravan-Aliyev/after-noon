@@ -16,6 +16,3 @@ function Bestsellers({ products }) {
 }
 
 export default Bestsellers;
-
-// const arr = [1, 2, 3];
-// arr.slice(0, 4);

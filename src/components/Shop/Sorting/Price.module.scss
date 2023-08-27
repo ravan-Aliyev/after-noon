@@ -57,12 +57,10 @@
   right: 6px;
 }
 
-/* Removing the default appearance */
 .thumb,
 .thumb::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  // -webkit-tap-highlight-color: transparent;
 }
 
 .thumb {
@@ -82,7 +80,6 @@
   z-index: 4;
 }
 
-/* For Chrome browsers */
 .thumb::-webkit-slider-thumb {
   background-color: $color-black;
   border: none;
@@ -99,7 +96,6 @@
   background-color: $color-black;
 }
 
-/* For Firefox browsers */
 .thumb::-moz-range-thumb {
   background-color: $color-black;
   border: none;

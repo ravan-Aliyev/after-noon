@@ -85,20 +85,6 @@ function Main({ products }) {
     setResetPrice(true);
   };
 
-  // console.log(
-  //   products.filter((item) => item.catecory.some((item) => item === "rugs"))
-  // );
-
-  // console.log(
-  //   products.filter((item) =>
-  //     item.products.some((pro) =>
-  //       ["Beige", "White", "Bronze", "Gold"].some(
-  //         (item) => item === pro.color.colorName
-  //       )
-  //     )
-  //   )
-  // );
-
   return (
     <main className={classes.main}>
       <Container>

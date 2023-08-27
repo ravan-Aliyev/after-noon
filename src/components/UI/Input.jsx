@@ -1,4 +1,3 @@
-import { useState } from "react";
 import classes from "./Input.module.scss";
 
 function Input({ defaultValue, onRemove, onAdd, onUpdate, setValue }) {

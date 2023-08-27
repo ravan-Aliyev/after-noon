@@ -1,10 +1,9 @@
-import React from "react";
 import { useEffect, useState } from "react";
 import { onAuthStateChanged } from "@firebase/auth";
 import { auth, db } from "../firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { authActions } from "../store/auth-slice";
-import { doc, getDoc, setDoc, updateDoc } from "@firebase/firestore";
+import { doc, getDoc, updateDoc } from "@firebase/firestore";
 import { cartActions } from "../store/cart-slice";
 
 function useAuth() {
@@ -57,14 +56,6 @@ function useAuth() {
             })
           );
         }
-        // else {
-        //   dispatch(
-        //     cartActions.replaceItem({
-        //       items: [],
-        //       totalValue: 0,
-        //     })
-        //   );
-        // }
       };
       getItem();
     }
