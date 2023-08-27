@@ -1,0 +1,17 @@
+@use "../../assets/sass/" as *;
+
+.section {
+  padding-top: 16rem;
+}
+
+.container {
+  text-align: center;
+  background-color: $color-black;
+  padding: 6rem;
+  color: #fff;
+  line-height: 1.5;
+
+  p {
+    padding: 0 27rem;
+  }
+}

@@ -1,0 +1,33 @@
+@use "../../../assets/sass/" as *;
+
+.container {
+  position: relative;
+  .header {
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    padding: 2rem 20rem;
+    border: $border;
+    width: fit-content;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+  }
+  .list {
+    display: flex;
+    border: $border;
+    .item {
+      padding: 6rem 8rem;
+      padding-top: 10rem;
+      width: 100%;
+      @include center;
+
+      &:not(:last-child) {
+        border-right: $border;
+      }
+      img {
+        object-fit: contain;
+        aspect-ratio: 4/2;
+      }
+    }
+  }
+}

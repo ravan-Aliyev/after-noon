@@ -1,0 +1,120 @@
+@use "../../assets/sass/" as *;
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba($color-black, 0.6);
+  z-index: 100;
+  @include center;
+
+  .modal {
+    position: relative;
+    background-color: #fff;
+    min-width: 80rem;
+    height: 70%;
+    display: flex;
+    padding: 4rem;
+    gap: 10rem;
+    text-align: left;
+    justify-content: space-between;
+    border: 2px solid $color-black;
+    font-size: 1.3rem;
+
+    > * {
+      width: 100%;
+    }
+
+    .imgs {
+      padding-left: 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .img {
+        position: relative;
+        height: 100%;
+        img {
+          position: absolute;
+          object-fit: cover;
+          transition: all 0.7s;
+        }
+      }
+
+      .dots {
+        align-self: center;
+        display: flex;
+        gap: 1rem;
+        span {
+          display: inline-block;
+          width: 1rem;
+          height: 1rem;
+          background-color: $color-black;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3rem;
+
+      .price {
+        font-size: 1.7rem;
+        font-weight: 500;
+      }
+
+      .color {
+        .colorList {
+          display: flex;
+          li {
+            span {
+              display: inline-block;
+              width: 2rem;
+              height: 2rem;
+              border-radius: 50%;
+              margin-top: 1rem;
+              margin-right: 1rem;
+              outline-offset: 4px;
+              border: 1px solid rgba($color-black, 0.3);
+            }
+          }
+        }
+      }
+
+      .quantity {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+
+        input {
+          border: 1px solid rgba($color-black, 0.3);
+          width: 5rem;
+          padding: 1rem 0.3rem 1rem 1.5rem;
+        }
+      }
+
+      .cartBtn {
+        background-color: $color-black;
+        color: #fff;
+        width: 100%;
+      }
+    }
+
+    .icon {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      width: fit-content;
+
+      svg {
+        font-size: 17px;
+      }
+    }
+  }
+}

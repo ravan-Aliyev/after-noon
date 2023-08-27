@@ -1,0 +1,34 @@
+@use "../../../assets/sass/" as *;
+
+.container {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+
+  &:hover button {
+    opacity: 1;
+  }
+
+  img {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  button {
+    align-self: flex-start;
+    height: 18px;
+    width: 18px;
+    border: $border;
+    border-radius: 50%;
+    @include center;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .info {
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

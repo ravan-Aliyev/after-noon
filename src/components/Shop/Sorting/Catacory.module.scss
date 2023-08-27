@@ -1,0 +1,26 @@
+@use "../../../assets/sass/" as *;
+
+.catecoryList {
+  display: grid;
+  gap: 1rem;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  label {
+    text-transform: capitalize;
+
+    &:hover {
+      color: rgba($color-black, 0.4);
+    }
+  }
+
+  input:checked ~ label {
+    font-weight: 600;
+
+    &:hover {
+      color: $color-black;
+    }
+  }
+}

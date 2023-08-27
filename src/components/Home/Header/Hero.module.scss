@@ -1,0 +1,43 @@
+@use "../../../assets/sass/" as *;
+
+.section {
+  position: relative;
+}
+
+.heroImg {
+  display: flex;
+  overflow: hidden;
+  // height: 100vh;
+}
+
+.heroContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgba($color-black, 0.95);
+  z-index: 10;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 55rem;
+  color: #fff;
+  padding: 6.5rem 5rem;
+  text-align: center;
+
+  button {
+    background-color: transparent;
+    border: 1px solid #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: $color-black;
+    }
+  }
+
+  p {
+    padding: 0 9rem;
+  }
+}

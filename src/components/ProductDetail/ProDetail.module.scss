@@ -1,0 +1,133 @@
+@use "../../assets/sass/" as *;
+
+.section {
+  max-width: 90rem;
+  margin: 0 auto;
+  display: flex;
+  padding: 4rem;
+  padding-top: 20rem;
+  gap: 5rem;
+  text-align: left;
+  justify-content: space-between;
+  font-size: 1.3rem;
+
+  .imgs {
+    width: 60%;
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .img {
+      // position: relative;
+      border: $border;
+      height: 100%;
+      figure {
+        // position: absolute;
+        transition: all 10s;
+      }
+    }
+
+    .dots {
+      align-self: center;
+      display: flex;
+      gap: 1rem;
+      span {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        background-color: transparent;
+        border: $border;
+        border-radius: 50%;
+      }
+    }
+
+    .description {
+      font-size: 1.7rem;
+      line-height: 1.5;
+    }
+  }
+
+  .info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 3rem;
+
+    .price {
+      font-size: 1.7rem;
+      font-weight: 500;
+    }
+
+    .color {
+      .colorList {
+        display: flex;
+        li {
+          span {
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            margin-top: 1rem;
+            margin-right: 1rem;
+            outline-offset: 4px;
+            border: 1px solid rgba($color-black, 0.3);
+          }
+        }
+      }
+    }
+
+    .quantity {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+
+      input {
+        border: 1px solid rgba($color-black, 0.3);
+        width: 5rem;
+        padding: 1rem 0.3rem 1rem 1.5rem;
+      }
+    }
+
+    .cartBtn {
+      background-color: $color-black;
+      color: #fff;
+      width: 100%;
+    }
+  }
+
+  .icon {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: fit-content;
+
+    svg {
+      font-size: 17px;
+    }
+  }
+}
+
+.productDetail {
+  display: flex;
+  flex-direction: column;
+
+  > div {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+
+    &:not(:first-child) {
+      border-top: 1px solid rgba($color-black, 0.3);
+    }
+  }
+}
+
+.medias {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 17px;
+}

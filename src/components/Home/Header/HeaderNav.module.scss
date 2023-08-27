@@ -1,0 +1,33 @@
+@use "../../../assets/sass/" as *;
+
+.section {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(50%);
+}
+
+.container {
+  background-color: #fff;
+}
+
+.navigation {
+  display: flex;
+  li {
+    width: 100%;
+    padding: 5rem;
+    @include center;
+
+    border-bottom: 1px solid $color-black;
+    &:not(:last-child) {
+      border-right: 1px solid $color-black;
+    }
+
+    svg {
+      font-size: 45px;
+      margin-right: 1rem;
+      stroke: #fff;
+      stroke-width: 3%;
+    }
+  }
+}

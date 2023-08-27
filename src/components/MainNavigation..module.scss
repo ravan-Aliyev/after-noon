@@ -1,0 +1,62 @@
+@use "../assets/sass/" as *;
+
+.default-flex {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 20px;
+}
+
+.nav {
+  color: $color-black;
+  background-color: #fff;
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+  transition: all 0.3s;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-black;
+  }
+}
+
+.navigation {
+  display: flex;
+  gap: 2rem;
+}
+
+.logo {
+  font-size: 2.1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  svg {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  a {
+    color: inherit;
+    font-weight: 500;
+  }
+}
+
+.medias {
+  @extend .default-flex;
+}
+
+.actions {
+  @extend .default-flex;
+  gap: 2rem;
+}
+
+.user {
+  @extend .default-flex;
+}

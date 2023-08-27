@@ -1,0 +1,79 @@
+@use "../../../assets/sass/" as *;
+
+.section {
+  padding: 20rem 0;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  align-items: start;
+  gap: 7rem;
+
+  .items,
+  .order {
+    display: flex;
+    flex-direction: column;
+
+    > * {
+      padding: 2rem 0;
+      &:not(:last-child) {
+        border-bottom: $border;
+      }
+    }
+
+    > p {
+      font-size: 1.9rem;
+    }
+  }
+
+  .items {
+    width: 65%;
+  }
+
+  .order {
+    width: 35%;
+
+    .subtotal,
+    .total {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .subtotal {
+      font-size: 1.6rem;
+    }
+
+    .total {
+      font-size: 1.9rem;
+    }
+
+    button {
+      background-color: $color-black;
+      color: #fff;
+      width: 100%;
+      margin-top: 4rem;
+    }
+  }
+}
+
+.empty {
+  width: 100%;
+  padding: 15rem 0;
+  padding-top: calc(15rem - 7rem);
+  @include center;
+  flex-direction: column;
+  gap: 2rem;
+  border-bottom: $border;
+
+  p {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
